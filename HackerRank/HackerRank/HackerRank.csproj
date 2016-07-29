@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C40BB052-8438-4BEA-8834-61BAE9D5EFD7}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HackerRank</RootNamespace>
+    <AssemblyName>HackerRank</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AntiPrime\AntiPrime.csproj">
+      <Project>{553bf193-4c89-4fa3-b2ee-7ceeac91f2b5}</Project>
+      <Name>AntiPrime</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CamelCase\CamelCase.csproj">
+      <Project>{8ce3e6d4-e196-4346-a2dd-2069cc1f6e72}</Project>
+      <Name>CamelCase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CutTheSticks\CutTheSticks.csproj">
+      <Project>{811789a6-ba19-4671-aba4-6f37c807fc84}</Project>
+      <Name>CutTheSticks</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DiagonalDiff\DiagonalDiff.csproj">
+      <Project>{15cca8f9-7b3a-47dd-8ada-157e0b42edfe}</Project>
+      <Name>DiagonalDiff</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\euler1\euler1.csproj">
+      <Project>{9ff8038f-b24a-43c2-9f56-53150658b9bf}</Project>
+      <Name>euler1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MagicSquareForming\MagicSquareForming.csproj">
+      <Project>{240a1a7d-df36-4048-8317-13ef7796fe97}</Project>
+      <Name>MagicSquareForming</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\String Construction\String Construction.csproj">
+      <Project>{fc30b5bc-a6ff-43b5-a1c3-c8ae22b21010}</Project>
+      <Name>String Construction</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TheGridSearch\TheGridSearch.csproj">
+      <Project>{a91568c0-4476-45bf-ba2d-4e67cde163f6}</Project>
+      <Name>TheGridSearch</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UptopianTree\UptopianTree.csproj">
+      <Project>{16e10eff-24c0-40a7-ad29-28a1e261ac07}</Project>
+      <Name>UptopianTree</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
