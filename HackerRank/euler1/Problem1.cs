@@ -1,8 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Numerics;
 
 namespace euler1
 {
+    /// <summary>
+    /// Project Euler #1: Multiples of 3 and 5
+    /// </summary>
     public class Problem1
     {
         public static void Exec()
@@ -26,6 +30,4 @@ namespace euler1
             }
         }
     }
-
-    
 }

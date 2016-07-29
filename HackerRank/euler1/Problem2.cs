@@ -3,6 +3,10 @@ using System.Numerics;
 
 namespace euler1
 {
+    
+    /// <summary>
+    /// Project Euler #2: Even Fibonacci numbers
+    /// </summary>
     public class Problem2
     {
         public static void Exec()

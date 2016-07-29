@@ -22,7 +22,7 @@ namespace euler1
                     Console.WriteLine(N);
                 else
                 {
-                    var result = potentialFactors(N).Max();
+                    var result = primeFactors(N).Max();
                     Console.WriteLine(result);
                 }
             }

@@ -3,7 +3,7 @@
 namespace euler1
 {
     /// <summary>
-    /// Largest Prime Factor
+    /// Project Euler #4: Largest palindrome product
     /// </summary>
     public class Problem4
     {

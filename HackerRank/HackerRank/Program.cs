@@ -19,7 +19,8 @@ namespace HackerRank
             //euler1.Problem1.Exec();
             //euler1.Problem2.Exec();
             //euler1.Problem3.Exec();
-            euler1.Problem4.Exec();
+            //euler1.Problem4.Exec();
+            euler1.Problem5.Exec();
 
             Console.WriteLine("Press any key to continue...");
             Console.ReadLine();
