@@ -72,6 +72,10 @@
       <Project>{240a1a7d-df36-4048-8317-13ef7796fe97}</Project>
       <Name>MagicSquareForming</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Make10Bubbles\Make10Bubbles.csproj">
+      <Project>{9634aa86-e144-4802-a685-2bd605750c04}</Project>
+      <Name>Make10Bubbles</Name>
+    </ProjectReference>
     <ProjectReference Include="..\String Construction\String Construction.csproj">
       <Project>{fc30b5bc-a6ff-43b5-a1c3-c8ae22b21010}</Project>
       <Name>String Construction</Name>
