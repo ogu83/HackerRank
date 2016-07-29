@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Numerics;
 
 namespace euler1
 {
@@ -25,8 +24,8 @@ namespace euler1
                     sum += i;
                 }
                 sum *= sum;
-                Console.WriteLine(sum-squareSum);
+                Console.WriteLine(sum - squareSum);
             }
         }
-    }
+    }    
 }
