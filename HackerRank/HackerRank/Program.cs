@@ -23,7 +23,9 @@ namespace HackerRank
             //euler1.Problem5.Exec();
             //euler1.Problem6.Exec();
             //euler1.Problem7.Exec();
-            euler1.Problem8.Exec();
+            //euler1.Problem8.Exec();
+            //euler1.Problem9.Exec();
+            euler1.Problem10.Exec();
 
             //Make10Bubbles.Main.Exec();
 

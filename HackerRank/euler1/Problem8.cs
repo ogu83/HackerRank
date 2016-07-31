@@ -33,4 +33,6 @@ namespace euler1
 
         }
     }
+
+    
 }
