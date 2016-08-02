@@ -1,21 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Collections;
+using System.Collections.Generic;
 using System.Diagnostics;
 
 namespace euler1
 {
-    public class Problem12
+    /// <summary>
+    /// Project Euler #12: Highly divisible triangular number
+    /// </summary>
+    public partial class Problem12
     {
-
         static void Main(string[] args)
         {
             new Problem12().TrialDivision();
             new Problem12().PrimeDivisors();
             new Problem12().CoPrimes();
         }
-
 
         public void TrialDivision()
         {
@@ -34,7 +34,6 @@ namespace euler1
             Console.WriteLine("The first triangle number with over 500 digits is: {0}", number);
             Console.WriteLine("Solution took {0} ms", clock.ElapsedMilliseconds);
         }
-
 
         private int NumberOfDivisors(int number)
         {
@@ -76,75 +75,7 @@ namespace euler1
 
             Console.WriteLine("Solution took {0} ms", clock.ElapsedMilliseconds);
         }
-
-
-        private int PrimeFactorisationNoD(int number, int[] primelist)
-        {
-            int nod = 1;
-            int exponent;
-            int remain = number;
-
-            for (int i = 0; i < primelist.Length; i++)
-            {
-
-                // In case there is a remainder this is a prime factor as well
-                // The exponent of that factor is 1
-                if (primelist[i] * primelist[i] > number)
-                {
-                    return nod * 2;
-                }
-
-                exponent = 1;
-                while (remain % primelist[i] == 0)
-                {
-                    exponent++;
-                    remain = remain / primelist[i];
-                }
-                nod *= exponent;
-
-                //If there is no remainder, return the count
-                if (remain == 1)
-                {
-                    return nod;
-                }
-            }
-            return nod;
-        }
-
-        // Returns the list of prime numbers up to the input
-        public int[] ESieve(int upperLimit)
-        {
-
-            int sieveBound = (int)(upperLimit - 1) / 2;
-            int upperSqrt = ((int)Math.Sqrt(upperLimit) - 1) / 2;
-
-            BitArray PrimeBits = new BitArray(sieveBound + 1, true);
-
-            for (int i = 1; i <= upperSqrt; i++)
-            {
-                if (PrimeBits.Get(i))
-                {
-                    for (int j = i * 2 * (i + 1); j <= sieveBound; j += 2 * i + 1)
-                    {
-                        PrimeBits.Set(j, false);
-                    }
-                }
-            }
-
-            List<int> numbers = new List<int>((int)(upperLimit / (Math.Log(upperLimit) - 1.08366)));
-            numbers.Add(2);
-            for (int i = 1; i <= sieveBound; i++)
-            {
-                if (PrimeBits.Get(i))
-                {
-                    numbers.Add(2 * i + 1);
-                }
-            }
-
-            return numbers.ToArray();
-        }
         #endregion Prime Divisors
-
 
         #region Prime Divisors
         public void CoPrimes()
@@ -178,7 +109,108 @@ namespace euler1
 
             Console.WriteLine("Solution took {0} ms", clock.ElapsedMilliseconds);
         }
-
         #endregion Prime Divisors
+    }
+
+    public partial class Problem12
+    {
+        public static void Exec()
+        {
+            var row = int.Parse(Console.ReadLine());
+            int[] primelist = ESieve(750000);
+
+            for (int r = 0; r < row; r++)
+            {
+                var NN = Console.ReadLine();
+                int N;
+                int.TryParse(NN, out N);
+
+                int number = 1;
+                int i = 2;
+                while (PrimeFactorisationNoD(number, primelist) <= N)
+                {
+                    number += i;
+                    i++;
+                }
+                Console.WriteLine(number == 1 ? 3 : number);
+            }
+        }
+
+        public static int triangularNumber(int n)
+        {
+            int ret = 0;
+            for (int r = n; r > 0; r--)
+            {
+                ret += r;
+            }
+            return ret;
+        }
+
+        public static int PrimeFactorisationNoD(int number, int[] primelist)
+        {
+            int nod = 1;
+            int exponent;
+            int remain = number;
+
+            for (int i = 0; i < primelist.Length; i++)
+            {
+
+                // In case there is a remainder this is a prime factor as well
+                // The exponent of that factor is 1
+                if (primelist[i] * primelist[i] > number)
+                {
+                    return nod * 2;
+                }
+
+                exponent = 1;
+                while (remain % primelist[i] == 0)
+                {
+                    exponent++;
+                    remain = remain / primelist[i];
+                }
+                nod *= exponent;
+
+                //If there is no remainder, return the count
+                if (remain == 1)
+                {
+                    return nod;
+                }
+            }
+            return nod;
+        }
+
+        // Returns the list of prime numbers up to the input
+        public static int[] ESieve(int upperLimit)
+        {
+
+            int sieveBound = (int)(upperLimit - 1) / 2;
+            int upperSqrt = ((int)Math.Sqrt(upperLimit) - 1) / 2;
+
+            BitArray PrimeBits = new BitArray(sieveBound + 1, true);
+
+            for (int i = 1; i <= upperSqrt; i++)
+            {
+                if (PrimeBits.Get(i))
+                {
+                    for (int j = i * 2 * (i + 1); j <= sieveBound; j += 2 * i + 1)
+                    {
+                        PrimeBits.Set(j, false);
+                    }
+                }
+            }
+
+            List<int> numbers = new List<int>((int)(upperLimit / (Math.Log(upperLimit) - 1.08366)));
+            numbers.Add(2);
+            for (int i = 1; i <= sieveBound; i++)
+            {
+                if (PrimeBits.Get(i))
+                {
+                    numbers.Add(2 * i + 1);
+                }
+            }
+
+            return numbers.ToArray();
+        }
+
     }
 }
