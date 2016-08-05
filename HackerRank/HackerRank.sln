@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "euler1", "euler1\euler1.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Make10Bubbles", "Make10Bubbles\Make10Bubbles.csproj", "{9634AA86-E144-4802-A685-2BD605750C04}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookingComFrontEndSprint", "BookingComFrontEndSprint\BookingComFrontEndSprint.csproj", "{110C6F66-3CB9-438B-93C2-44C1A11629D7}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -79,6 +81,10 @@ Global
 		{9634AA86-E144-4802-A685-2BD605750C04}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9634AA86-E144-4802-A685-2BD605750C04}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9634AA86-E144-4802-A685-2BD605750C04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{110C6F66-3CB9-438B-93C2-44C1A11629D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{110C6F66-3CB9-438B-93C2-44C1A11629D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{110C6F66-3CB9-438B-93C2-44C1A11629D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{110C6F66-3CB9-438B-93C2-44C1A11629D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -94,5 +100,6 @@ Global
 		{553BF193-4C89-4FA3-B2EE-7CEEAC91F2B5} = {98BE1B48-4A99-4B51-B918-9489E5A5B61C}
 		{9FF8038F-B24A-43C2-9F56-53150658B9BF} = {98BE1B48-4A99-4B51-B918-9489E5A5B61C}
 		{9634AA86-E144-4802-A685-2BD605750C04} = {98BE1B48-4A99-4B51-B918-9489E5A5B61C}
+		{110C6F66-3CB9-438B-93C2-44C1A11629D7} = {98BE1B48-4A99-4B51-B918-9489E5A5B61C}
 	EndGlobalSection
 EndGlobal

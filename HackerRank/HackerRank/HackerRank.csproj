@@ -52,6 +52,10 @@
       <Project>{553bf193-4c89-4fa3-b2ee-7ceeac91f2b5}</Project>
       <Name>AntiPrime</Name>
     </ProjectReference>
+    <ProjectReference Include="..\BookingComFrontEndSprint\BookingComFrontEndSprint.csproj">
+      <Project>{110c6f66-3cb9-438b-93c2-44c1a11629d7}</Project>
+      <Name>BookingComFrontEndSprint</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CamelCase\CamelCase.csproj">
       <Project>{8ce3e6d4-e196-4346-a2dd-2069cc1f6e72}</Project>
       <Name>CamelCase</Name>
