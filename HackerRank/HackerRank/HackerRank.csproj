@@ -80,6 +80,10 @@
       <Project>{9634aa86-e144-4802-a685-2bd605750c04}</Project>
       <Name>Make10Bubbles</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MorganStanleyCodeathon2016\MorganStanleyCodeathon2016.csproj">
+      <Project>{5f1cbfca-6a2f-4422-97c5-727b39766efa}</Project>
+      <Name>MorganStanleyCodeathon2016</Name>
+    </ProjectReference>
     <ProjectReference Include="..\String Construction\String Construction.csproj">
       <Project>{fc30b5bc-a6ff-43b5-a1c3-c8ae22b21010}</Project>
       <Name>String Construction</Name>

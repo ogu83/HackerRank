@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Make10Bubbles", "Make10Bubb
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookingComFrontEndSprint", "BookingComFrontEndSprint\BookingComFrontEndSprint.csproj", "{110C6F66-3CB9-438B-93C2-44C1A11629D7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MorganStanleyCodeathon2016", "MorganStanleyCodeathon2016\MorganStanleyCodeathon2016.csproj", "{5F1CBFCA-6A2F-4422-97C5-727B39766EFA}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -85,6 +87,10 @@ Global
 		{110C6F66-3CB9-438B-93C2-44C1A11629D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{110C6F66-3CB9-438B-93C2-44C1A11629D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{110C6F66-3CB9-438B-93C2-44C1A11629D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F1CBFCA-6A2F-4422-97C5-727B39766EFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F1CBFCA-6A2F-4422-97C5-727B39766EFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F1CBFCA-6A2F-4422-97C5-727B39766EFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F1CBFCA-6A2F-4422-97C5-727B39766EFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -101,5 +107,6 @@ Global
 		{9FF8038F-B24A-43C2-9F56-53150658B9BF} = {98BE1B48-4A99-4B51-B918-9489E5A5B61C}
 		{9634AA86-E144-4802-A685-2BD605750C04} = {98BE1B48-4A99-4B51-B918-9489E5A5B61C}
 		{110C6F66-3CB9-438B-93C2-44C1A11629D7} = {98BE1B48-4A99-4B51-B918-9489E5A5B61C}
+		{5F1CBFCA-6A2F-4422-97C5-727B39766EFA} = {98BE1B48-4A99-4B51-B918-9489E5A5B61C}
 	EndGlobalSection
 EndGlobal
